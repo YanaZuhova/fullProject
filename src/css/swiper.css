@@ -1,0 +1,50 @@
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #DDDDDD;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.swiper-container {
+    min-width: 330px;
+    max-width: 668px;
+	padding-bottom: 50px;
+}
+
+.swiper-container1 {
+	padding-bottom: 50px;
+	/* overflow: hidden; */
+	width: 100%;
+}
+
+.swiper-container2 {
+	padding-bottom: 50px;
+	/* overflow: hidden; */
+	width: 100%;
+}
+
+.swiper-pagination {
+    position: relative;
+    height: 44px;
+    top: 16px;
+    margin-left: -24px;
+}
+
+.pag-1 {
+	position: relative;
+	
+}
+
+.pag-2 {
+	position: relative;
+	
+}
+
+.pag-3 {
+	position: relative;
+	
+}
