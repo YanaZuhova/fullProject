@@ -1,0 +1,91 @@
+.form {
+  width: 288px;
+  position: relative;
+
+  input:hover + label {
+    opacity: 0;
+  }
+
+  @media (min-width: 768px) {
+    width: 376px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    height: 32px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--font-family);
+    font-weight: var(--weight-bold);
+    letter-spacing: -0.9px;
+    text-align: left;
+    align-items: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -16px;
+      top: 16px;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 32px;
+      background-image: url("data:image/svg+xml,%3Csvg width='4' height='32' viewBox='0 0 4 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 4C4 1.79086 2.20914 0 0 0V32C2.20914 32 4 30.2091 4 28V4Z' fill='%2341F6D7'/%3E%3C/svg%3E%0A");
+
+      @media (min-width: 768px) {
+        left: -32px;
+      }
+    }
+  }
+
+  &__item {
+    width: 288px;
+    height: 48px;
+    border: solid 1.5px var(--color-card-border);
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+      width: 376px;
+    }
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    &:focus {
+      outline: none;
+      border: solid 1.5px var(--color-links-contur);
+      font-family: var(--font-family);
+    }
+  }
+
+  &__label {
+    position: relative;
+    bottom: 35px;
+    left: 16px;
+    font-family: var(--font-family);
+    font-weight: var(--weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text-label);
+    letter-spacing: -0.2px;
+  }
+
+  &__description {
+    width: 304px;
+    margin-bottom: 19px;
+    font-family: var(--font-family);
+    font-weight: var(--weight-medium);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-text-label);
+
+    @media (min-width: 768px) {
+      width: 376px;
+      margin-bottom: 23px;
+    }
+
+    &--important {
+      color: var(--color-button);
+    }
+  }
+}

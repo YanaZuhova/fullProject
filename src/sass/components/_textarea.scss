@@ -1,0 +1,38 @@
+.textarea {
+  resize: none;
+  width: 288px;
+  height: 118px;
+  border: solid 1.5px var(--color-card-border);
+  border-radius: 5px;
+
+  @media (min-width: 768px) {
+    width: 376px;
+  }
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &:focus {
+    outline: none;
+    border: solid 1.5px var(--color-links-contur);
+    font-family: var(--font-family);
+  }
+
+  &:hover + label {
+    opacity: 0;
+    height: 118px;
+  }
+
+  &__label {
+    position: relative;
+    bottom: 116px;
+    left: 16px;
+    font-family: var(--font-family);
+    font-weight: var(--weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text-label);
+    letter-spacing: -0.2px;
+  }
+}
